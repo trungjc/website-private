@@ -31,7 +31,7 @@ html.no-js(lang='')
       p.browserupgrade You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     <![endif]-->
 
-    .header#header
+    .header#header.sticky-header
       .container
         .navbar.navbar-expand.navbar-dark.flex-column.flex-md-row.bd-navbar
           a.navbar-brand.mr-0.mr-md-2(href='/', aria-label='Bootstrap')
@@ -39,14 +39,12 @@ html.no-js(lang='')
           .navbar-nav-scroll
             ul.navbar-nav.bd-navbar-nav.flex-row
               li.nav-item
-                a.nav-link(href='#hero', ) Home
-              li.nav-item
                 a.nav-link(href='#what-we-do') What we do
               li.nav-item
                 a.nav-link(href='#meet-our-team',) Meet our team
               li.nav-item
                 a.nav-link(href='#customers-say',) Customers Say
-          a.btn.btn-secondary.btn-bd-download.d-none.d-lg-inline-block.mb-3.mb-md-0.ml-md-3(href='#contact-us') Contact Us
+          a.btn.btn-secondary.btn-bd-download.d-none.d-lg-inline-block.mb-3.mb-md-0.ml-md-3(href='#contact-us') Get started
 
 
 
@@ -70,6 +68,20 @@ html.no-js(lang='')
 
 
             .col-md-4
+                h3 Contact us
+                .info
+                    p.mb-2
+                        a(href="skype:trungvs83?call")
+                            i(class="fab fa-skype")
+                            | &nbsp; trungvs83
+                    p.mb-2
+                         a(href="mailto:trungnguyenthanh70@gmail.com")
+                            i(class="fas fa-envelope")
+                            | &nbsp; trungnguyenthanh70@gmail.com
+                    p.mb-0
+                        a(href="tel:84 0983987498")
+                            i(class="fas fa-phone-volume")
+                            | &nbsp; 84 0983987498
 
             .col-md-4
 
@@ -97,6 +109,7 @@ html.no-js(lang='')
     //- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js')
     //- script(src='/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js')
     script(src='lib/bootstrap/dist/js/bootstrap.min.js')
+    script(src='lib/sticky.js')
     // endbuild
 
 

@@ -8,7 +8,7 @@ block content
         .container
             h1 Hire us
             p Top professionals, ready to join your team.
-            a.btn.btn-secondary(href="")
+            a(href='#customers-say' class="btn-go-to btn btn-secondary" )
                 | Get started
                 i.fas.fa-arrow-circle-right
     section.tpl-block.tpl-block-grey#what-we-do
@@ -66,8 +66,30 @@ block content
                                 span(class="badge badge-secondary") LESS
                                 span(class="badge badge-secondary") SCSS
                                 span(class="badge badge-secondary") JS
+                            .detail
+                                .d-flex.align-items-center.mb-5.pb-3
+                                    .img.mr-5
+                                        img(src="https://pangara.com/wp-content/uploads/2019/09/image-1-150x150.png" width="150")
+
+                                    .text
+                                        h3.mb-2 Nghia
+                                        .position.bold senior Frontend developer
+                                        .education.muted.text-sm Bachelor of Information Technology
+                                .description
+                                    | Nghia has held many positions including technical leader and developer. He loves coding and loves to learn new technology. Moreover, further to being a Fullstack developer, Nguyen also has a deep understanding about mobile applications and mobile games and has the ability to solve problems between native apps and server side. His unique capabilities would be a great asset to any company seeking to meet customers’ satisfaction.
+
+                                hr.mt-5.mb-5
+                                h3 STRONG SKILL
+                                .skill
+                                    span(class="badge badge-secondary") PHP
+                                    span(class="badge badge-secondary") wordpress
+                                    span(class="badge badge-secondary") Javascript
+                                    span(class="badge badge-secondary") Magento
+                                    span(class="badge badge-secondary") SCSS
+                                    span(class="badge badge-secondary") LESS
+                                    span(class="badge badge-secondary") Jquery
                             .action-button
-                                a.btn.btn-primary.btn-xs(href="#") View profile
+                                a.btn.btn-primary.btn-xs(data-toggle="modal" data-target="#dev-modal" href="#") View profile
                 .col-md-4.box
                     .card
                         a(href="" class="avatar")
@@ -83,8 +105,31 @@ block content
                                 span(class="badge badge-secondary") CSS
                                 span(class="badge badge-secondary") JS
                                 span(class="badge badge-secondary") Angularjs
+                            .detail
+                                .d-flex.align-items-center.mb-5.pb-3
+                                    .img.mr-5
+                                        img(src="https://pangara.com/wp-content/uploads/2018/04/Han-Van-Hieu-150x150.png" width="150")
+
+                                    .text
+                                        h3.mb-2 TRUNG
+                                        .position.bold senior php
+                                        .education.muted.text-sm Bachelor of Information Technology
+                                .description
+                                    | TRUNG has held many positions including technical leader and developer. He loves coding and loves to learn new technology. Moreover, further to being a Fullstack developer, Nguyen also has a deep understanding about mobile applications and mobile games and has the ability to solve problems between native apps and server side. His unique capabilities would be a great asset to any company seeking to meet customers’ satisfaction.
+
+                                hr.mt-5.mb-5
+                                h3 STRONG SKILL
+                                .skill
+                                    span(class="badge badge-secondary") php
+                                    span(class="badge badge-secondary") wordpress
+                                    span(class="badge badge-secondary") Javascript
+                                    span(class="badge badge-secondary") Magento
+                                    span(class="badge badge-secondary") CSS
+                                    span(class="badge badge-secondary") JS
+                                    span(class="badge badge-secondary") Angularjs
+
                             .action-button
-                                a.btn.btn-primary.btn-xs(href="#") View profile
+                                a.btn.btn-primary.btn-xs(data-toggle="modal" data-target="#dev-modal" href="#") View profile
                 .col-md-4.box
                     .card
                         a(href="" class="avatar")
@@ -100,8 +145,30 @@ block content
                                 span(class="badge badge-secondary") SCSS
                                 span(class="badge badge-secondary") LESS
                                 span(class="badge badge-secondary") Jquery
+                            .detail
+                                .d-flex.align-items-center.mb-5.pb-3
+                                    .img.mr-5
+                                        img(src="https://pangara.com/wp-content/uploads/2019/09/image-3-150x150.png" width="150")
+
+                                    .text
+                                        h3.mb-2 Quyen
+                                        .position.bold FUll-stack
+                                        .education.muted.text-sm Bachelor of Information Technology
+                                .description
+                                    | Quyen has held many positions including technical leader and developer. He loves coding and loves to learn new technology. Moreover, further to being a Fullstack developer, Nguyen also has a deep understanding about mobile applications and mobile games and has the ability to solve problems between native apps and server side. His unique capabilities would be a great asset to any company seeking to meet customers’ satisfaction.
+
+                                hr.mt-5.mb-5
+                                h3 STRONG SKILL
+                                .skill
+                                    span(class="badge badge-secondary") PHP
+                                    span(class="badge badge-secondary") wordpress
+                                    span(class="badge badge-secondary") Javascript
+                                    span(class="badge badge-secondary") Magento
+                                    span(class="badge badge-secondary") SCSS
+                                    span(class="badge badge-secondary") LESS
+                                    span(class="badge badge-secondary") Jquery
                             .action-button
-                                a.btn.btn-primary.btn-xs(href="#") View profile
+                                a.btn.btn-primary.btn-xs(data-toggle="modal" data-target="#dev-modal" href="#") View profile
 
     section.tpl-block.customers-review#customers-say
         .container
@@ -131,20 +198,18 @@ block content
                                     p CTO, Appspotr
 
                             p "We've spent a long time looking for developers with no results. With Pangara, not only have we saved a great deal of time, but also money."
-                            a(href="") » Read case study
                 .col-md-4
                     .card.card-default
                         .card-body
                             .d-flex.profile-top
                                 .avatar
-                                    img(src="https://pangara.com/wp-content/uploads/2018/08/Per_Rundblom-100x100.jpg")
+                                    img(src="https://pangara.com/wp-content/uploads/2018/08/Pontus_Backlund-100x100.jpg")
                                 .text
                                     h5 Per Rundblom
                                     p Co-Founder
 
 
                             p "We needed to rewrite an app and make changes to our APIs. These are complicated tasks, but it proved no match for a Pangara engineer.
-                            a(href="") » Read case study
 
                 .col-md-4
                     .card.card-default
@@ -157,12 +222,18 @@ block content
                                     p CTO, Together Gaming
 
                             p "I barely dare to think where we would have been if we hadn’t found Pangara. The biggest win has definitely been in terms of time saved."
-                            a(href="") » Read case study
     section.tpl-block.tpl-block-dark#contact-us
             .container
                 .heading-section
                         h2 Let's start working together!
                         p Describe what competence you are looking for and we will present candidates
                         a.btn.btn-secondary(href="")
-                            | Get started
+                            | Contact Us
                             i.fas.fa-arrow-circle-right
+    #dev-modal.modal
+        .modal-dialog
+            .modal-content
+                .flex.justify-content-end.pt-3.pr-3
+                    button.close(type='button', data-dismiss='modal' style="outline:none;font-size:2rem") ×
+                .modal-body
+

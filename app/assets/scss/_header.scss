@@ -1,8 +1,8 @@
-.header {
+.header ,.sticky-wrapper{
   position: absolute;
-  width: 100%;
+  width: 100%!important;
   left:0;
-  padding: 25px 35px;
+  padding: 25px 0px;
   top:0;
   z-index: 999;
   ul {
@@ -10,9 +10,22 @@
     padding: 0;
   }
 }
+.sticky-wrapper.is-sticky {
+  .header {
+    background: white;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    .navbar-brand {
+      color: $orange
+    }
+    .navbar-expand .navbar-nav .nav-link {
+      color: $link-color
+    }
+  }
+}
 .navbar-expand .navbar-nav .nav-link {
   padding-right: 1rem;
   padding-left: 1rem;
+
 }
 .navbar-nav-scroll {
   flex: 1;
@@ -27,4 +40,14 @@
 .navbar-brand {
   font-weight: 700;
   font-size: 30px;
+}
+
+@include max-767 {
+  .navbar-expand .navbar-nav .nav-link{
+    font-size: 1.6rem;
+  }
+
+  .btn-bd-download {
+    margin-top: 2rem;
+  }
 }

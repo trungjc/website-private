@@ -12,24 +12,23 @@
   </head>
   <body><!--[if lt IE 10]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
-    <div class="header" id="header">
+    <div class="header sticky-header" id="header">
       <div class="container">
         <div class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"><a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">D-SOLUTION</a>
           <div class="navbar-nav-scroll">
             <ul class="navbar-nav bd-navbar-nav flex-row">
-              <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="#what-we-do">What we do</a></li>
               <li class="nav-item"><a class="nav-link" href="#meet-our-team">Meet our team</a></li>
               <li class="nav-item"><a class="nav-link" href="#customers-say">Customers Say</a></li>
             </ul>
-          </div><a class="btn btn-secondary btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#contact-us">Contact Us</a>
+          </div><a class="btn btn-secondary btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#contact-us">Get started</a>
         </div>
       </div>
     </div>
     <section class="hero" id="hero">
       <div class="container">
         <h1>Hire us</h1>
-        <p>Top professionals, ready to join your team.</p><a class="btn btn-secondary" href="">Get started<i class="fas fa-arrow-circle-right"></i></a>
+        <p>Top professionals, ready to join your team.</p><a class="btn-go-to btn btn-secondary" href="#customers-say">Get started<i class="fas fa-arrow-circle-right"></i></a>
       </div>
     </section>
     <section class="tpl-block tpl-block-grey" id="what-we-do">
@@ -87,7 +86,21 @@
                 <h5 class="name">Nghia</h5>
                 <div class="position">senior Frontend developer</div>
                 <div class="skill"><span class="badge badge-secondary">Angularjs</span><span class="badge badge-secondary">Vuejs</span><span class="badge badge-secondary">Javascript</span><span class="badge badge-secondary">Reactjs</span><span class="badge badge-secondary">CSS</span><span class="badge badge-secondary">LESS</span><span class="badge badge-secondary">SCSS</span><span class="badge badge-secondary">JS</span></div>
-                <div class="action-button"><a class="btn btn-primary btn-xs" href="#">View profile</a></div>
+                <div class="detail">
+                  <div class="d-flex align-items-center mb-5 pb-3">
+                    <div class="img mr-5"><img src="https://pangara.com/wp-content/uploads/2019/09/image-1-150x150.png" width="150"></div>
+                    <div class="text">
+                      <h3 class="mb-2">Nghia</h3>
+                      <div class="position bold">senior Frontend developer</div>
+                      <div class="education muted text-sm">Bachelor of Information Technology</div>
+                    </div>
+                  </div>
+                  <div class="description">Nghia has held many positions including technical leader and developer. He loves coding and loves to learn new technology. Moreover, further to being a Fullstack developer, Nguyen also has a deep understanding about mobile applications and mobile games and has the ability to solve problems between native apps and server side. His unique capabilities would be a great asset to any company seeking to meet customers’ satisfaction.</div>
+                  <hr class="mt-5 mb-5">
+                  <h3>STRONG SKILL</h3>
+                  <div class="skill"><span class="badge badge-secondary">PHP</span><span class="badge badge-secondary">wordpress</span><span class="badge badge-secondary">Javascript</span><span class="badge badge-secondary">Magento</span><span class="badge badge-secondary">SCSS</span><span class="badge badge-secondary">LESS</span><span class="badge badge-secondary">Jquery</span></div>
+                </div>
+                <div class="action-button"><a class="btn btn-primary btn-xs" data-toggle="modal" data-target="#dev-modal" href="#">View profile</a></div>
               </div>
             </div>
           </div>
@@ -97,7 +110,21 @@
                 <h5 class="name">Trung</h5>
                 <div class="position">senior php</div>
                 <div class="skill"><span class="badge badge-secondary">php</span><span class="badge badge-secondary">wordpress</span><span class="badge badge-secondary">Javascript</span><span class="badge badge-secondary">Magento</span><span class="badge badge-secondary">CSS</span><span class="badge badge-secondary">JS</span><span class="badge badge-secondary">Angularjs</span></div>
-                <div class="action-button"><a class="btn btn-primary btn-xs" href="#">View profile</a></div>
+                <div class="detail">
+                  <div class="d-flex align-items-center mb-5 pb-3">
+                    <div class="img mr-5"><img src="https://pangara.com/wp-content/uploads/2018/04/Han-Van-Hieu-150x150.png" width="150"></div>
+                    <div class="text">
+                      <h3 class="mb-2">TRUNG</h3>
+                      <div class="position bold">senior php</div>
+                      <div class="education muted text-sm">Bachelor of Information Technology</div>
+                    </div>
+                  </div>
+                  <div class="description">TRUNG has held many positions including technical leader and developer. He loves coding and loves to learn new technology. Moreover, further to being a Fullstack developer, Nguyen also has a deep understanding about mobile applications and mobile games and has the ability to solve problems between native apps and server side. His unique capabilities would be a great asset to any company seeking to meet customers’ satisfaction.</div>
+                  <hr class="mt-5 mb-5">
+                  <h3>STRONG SKILL</h3>
+                  <div class="skill"><span class="badge badge-secondary">php</span><span class="badge badge-secondary">wordpress</span><span class="badge badge-secondary">Javascript</span><span class="badge badge-secondary">Magento</span><span class="badge badge-secondary">CSS</span><span class="badge badge-secondary">JS</span><span class="badge badge-secondary">Angularjs</span></div>
+                </div>
+                <div class="action-button"><a class="btn btn-primary btn-xs" data-toggle="modal" data-target="#dev-modal" href="#">View profile</a></div>
               </div>
             </div>
           </div>
@@ -107,7 +134,21 @@
                 <h5 class="name">Quyen</h5>
                 <div class="position">FUll-stack</div>
                 <div class="skill"><span class="badge badge-secondary">PHP</span><span class="badge badge-secondary">wordpress</span><span class="badge badge-secondary">Javascript</span><span class="badge badge-secondary">Magento</span><span class="badge badge-secondary">SCSS</span><span class="badge badge-secondary">LESS</span><span class="badge badge-secondary">Jquery</span></div>
-                <div class="action-button"><a class="btn btn-primary btn-xs" href="#">View profile</a></div>
+                <div class="detail">
+                  <div class="d-flex align-items-center mb-5 pb-3">
+                    <div class="img mr-5"><img src="https://pangara.com/wp-content/uploads/2019/09/image-3-150x150.png" width="150"></div>
+                    <div class="text">
+                      <h3 class="mb-2">Quyen</h3>
+                      <div class="position bold">FUll-stack</div>
+                      <div class="education muted text-sm">Bachelor of Information Technology</div>
+                    </div>
+                  </div>
+                  <div class="description">Quyen has held many positions including technical leader and developer. He loves coding and loves to learn new technology. Moreover, further to being a Fullstack developer, Nguyen also has a deep understanding about mobile applications and mobile games and has the ability to solve problems between native apps and server side. His unique capabilities would be a great asset to any company seeking to meet customers’ satisfaction.</div>
+                  <hr class="mt-5 mb-5">
+                  <h3>STRONG SKILL</h3>
+                  <div class="skill"><span class="badge badge-secondary">PHP</span><span class="badge badge-secondary">wordpress</span><span class="badge badge-secondary">Javascript</span><span class="badge badge-secondary">Magento</span><span class="badge badge-secondary">SCSS</span><span class="badge badge-secondary">LESS</span><span class="badge badge-secondary">Jquery</span></div>
+                </div>
+                <div class="action-button"><a class="btn btn-primary btn-xs" data-toggle="modal" data-target="#dev-modal" href="#">View profile</a></div>
               </div>
             </div>
           </div>
@@ -132,7 +173,7 @@
                     <p>CTO, Appspotr</p>
                   </div>
                 </div>
-                <p>"We've spent a long time looking for developers with no results. With Pangara, not only have we saved a great deal of time, but also money."</p><a href="">» Read case study</a>
+                <p>"We've spent a long time looking for developers with no results. With Pangara, not only have we saved a great deal of time, but also money."</p>
               </div>
             </div>
           </div>
@@ -140,13 +181,13 @@
             <div class="card card-default">
               <div class="card-body">
                 <div class="d-flex profile-top">
-                  <div class="avatar"><img src="https://pangara.com/wp-content/uploads/2018/08/Per_Rundblom-100x100.jpg"></div>
+                  <div class="avatar"><img src="https://pangara.com/wp-content/uploads/2018/08/Pontus_Backlund-100x100.jpg"></div>
                   <div class="text">
                     <h5>Per Rundblom</h5>
                     <p>Co-Founder</p>
                   </div>
                 </div>
-                <p>"We needed to rewrite an app and make changes to our APIs. These are complicated tasks, but it proved no match for a Pangara engineer.</p><a href="">» Read case study</a>
+                <p>"We needed to rewrite an app and make changes to our APIs. These are complicated tasks, but it proved no match for a Pangara engineer.</p>
               </div>
             </div>
           </div>
@@ -160,7 +201,7 @@
                     <p>CTO, Together Gaming</p>
                   </div>
                 </div>
-                <p>"I barely dare to think where we would have been if we hadn’t found Pangara. The biggest win has definitely been in terms of time saved."</p><a href="">» Read case study</a>
+                <p>"I barely dare to think where we would have been if we hadn’t found Pangara. The biggest win has definitely been in terms of time saved."</p>
               </div>
             </div>
           </div>
@@ -171,10 +212,20 @@
       <div class="container">
         <div class="heading-section">
           <h2>Let's start working together!</h2>
-          <p>Describe what competence you are looking for and we will present candidates</p><a class="btn btn-secondary" href="">Get started<i class="fas fa-arrow-circle-right"></i></a>
+          <p>Describe what competence you are looking for and we will present candidates</p><a class="btn btn-secondary" href="">Contact Us<i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
     </section>
+    <div class="modal" id="dev-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="flex justify-content-end pt-3 pr-3">
+            <button class="close" type="button" data-dismiss="modal" style="outline:none;font-size:2rem">×</button>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
     <div class="footer">
       <div class="container">
         <div class="row">
@@ -189,7 +240,14 @@
                   <div class="fab fa-twitter"></div></a></li>
             </ul>
           </div>
-          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <h3>Contact us</h3>
+            <div class="info">
+              <p class="mb-2"><a href="skype:trungvs83?call"><i class="fab fa-skype"></i>&nbsp; trungvs83</a></p>
+              <p class="mb-2"><a href="mailto:trungnguyenthanh70@gmail.com"><i class="fas fa-envelope"></i>&nbsp; trungnguyenthanh70@gmail.com</a></p>
+              <p class="mb-0"><a href="tel:84 0983987498"><i class="fas fa-phone-volume"></i>&nbsp; 84 0983987498</a></p>
+            </div>
+          </div>
           <div class="col-md-4"></div>
         </div>
       </div>

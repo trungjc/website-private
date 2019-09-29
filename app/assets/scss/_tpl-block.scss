@@ -18,6 +18,9 @@
     text-align: center;
   }
   &.tpl-user-block {
+    .detail {
+      display: none;
+    }
     .card {
       text-align: center;
       border-radius: 8px;
@@ -47,18 +50,7 @@
       .position {
         margin-bottom: 2rem;
       }
-      .badge {
-        font-size: 14px;
-        padding: 5px 12px;
-        border-radius: 6px;
-        border: 1px solid #bababa;
-        background: none;
-        font-weight: 600;
-        color: $link-color;
-        display: inline-block;
-        margin: 0 5px 8px 0;
-        position: relative;
-      }
+
     }
   }
   &.tpl-block-grey {
@@ -137,4 +129,24 @@
   p + .btn {
     margin-top: 2rem;
   }
+}
+.badge {
+  font-size: 14px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 1px solid #bababa;
+  background: none;
+  font-weight: 600;
+  color: $link-color;
+  display: inline-block;
+  margin: 0 5px 8px 0;
+  position: relative;
+}
+
+.modal-body {
+  padding:30px;
+}
+
+.text-sm {
+  font-size: 90%;
 }

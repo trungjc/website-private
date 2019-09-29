@@ -47,6 +47,9 @@ body {
   letter-spacing: -0.02px;
   line-height: 1.4; }
 
+.bold {
+  font-weight: 600; }
+
 img {
   max-width: 100%; }
 
@@ -134,6 +137,8 @@ a {
   padding: 10rem 0; }
   .tpl-block .heading-section {
     text-align: center; }
+  .tpl-block.tpl-user-block .detail {
+    display: none; }
   .tpl-block.tpl-user-block .card {
     text-align: center;
     border-radius: 8px;
@@ -156,17 +161,6 @@ a {
       margin-top: 2rem; }
     .tpl-block.tpl-user-block .card .position {
       margin-bottom: 2rem; }
-    .tpl-block.tpl-user-block .card .badge {
-      font-size: 14px;
-      padding: 5px 12px;
-      border-radius: 6px;
-      border: 1px solid #bababa;
-      background: none;
-      font-weight: 600;
-      color: #036;
-      display: inline-block;
-      margin: 0 5px 8px 0;
-      position: relative; }
   .tpl-block.tpl-block-grey {
     background: #F3F6FC; }
     .tpl-block.tpl-block-grey h3 {
@@ -242,16 +236,43 @@ a {
   .tpl-block-dark p + .btn {
     margin-top: 2rem; }
 
-.header {
+.badge {
+  font-size: 14px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 1px solid #bababa;
+  background: none;
+  font-weight: 600;
+  color: #036;
+  display: inline-block;
+  margin: 0 5px 8px 0;
+  position: relative; }
+
+.modal-body {
+  padding: 30px; }
+
+.text-sm {
+  font-size: 90%; }
+
+.header, .sticky-wrapper {
   position: absolute;
-  width: 100%;
+  width: 100% !important;
   left: 0;
-  padding: 25px 35px;
+  padding: 25px 0px;
   top: 0;
   z-index: 999; }
-  .header ul {
+  .header ul, .sticky-wrapper ul {
     list-style: none;
     padding: 0; }
+
+.sticky-wrapper.is-sticky .header {
+  background: white;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0.1); }
+  .sticky-wrapper.is-sticky .header .navbar-brand {
+    color: #ff4f00; }
+  .sticky-wrapper.is-sticky .header .navbar-expand .navbar-nav .nav-link {
+    color: #036; }
 
 .navbar-expand .navbar-nav .nav-link {
   padding-right: 1rem;
@@ -275,6 +296,12 @@ a {
   font-weight: 700;
   font-size: 30px; }
 
+@media screen and (max-width: 767px) {
+  .navbar-expand .navbar-nav .nav-link {
+    font-size: 1.6rem; }
+  .btn-bd-download {
+    margin-top: 2rem; } }
+
 .footer {
   padding: 3rem 0 1rem;
   background: #0f1522;
@@ -284,6 +311,12 @@ a {
     text-transform: uppercase;
     color: #979797;
     margin: 0 0 1rem; }
+  .footer .info {
+    font-weight: 600; }
+    .footer .info i {
+      min-width: 20px; }
+  .footer a {
+    color: inherit; }
   .footer ul {
     list-style: none;
     padding: 0;
