@@ -1,0 +1,276 @@
+// ------------------------------------------------------
+// mixins
+// ------------------------------------------------------
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin appearance($value) {
+  webkit-appearance: $value;
+  -moz-appearance:    $value;
+  appearance:         $value;
+}
+@mixin gadientBox() {
+  content:"";
+  position: absolute;
+  left:0;
+  bottom:0;
+  display: block;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  pointer-events: none;
+  opacity: 0.8;
+  background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, #000000 100%);
+}
+
+@mixin scale($value) {
+  -webkit-transform: scale($value);
+  -moz-transform: scale($value);
+  -ms-transform: scale($value);
+  -o-transform: scale($value);
+  transform: scale($value);
+}
+
+@mixin scale2D($value, $value2) {
+  -webkit-transform: scale($value, $value2);
+  -moz-transform: scale($value, $value2);
+  -ms-transform: scale($value, $value2);
+  -o-transform: scale($value, $value2);
+  transform: scale($value, $value2);
+}
+
+
+@mixin translateX($left) {
+  -webkit-transform: translateX($left);
+  -moz-transform: translateX($left);
+  -ms-transform: translateX($left);
+  -o-transform: translateX($left);
+  transform: translateX($left);
+}
+
+@mixin translateY($top) {
+  -webkit-transform: translateY($top);
+  -moz-transform: translateY($top);
+  -ms-transform: translateY($top);
+  -o-transform: translateY($top);
+  transform: translateY($top);
+}
+@mixin transform($top,$left) {
+  -webkit-transform: translate($top,$left);
+  -moz-transform: translate($top,$left);
+  -ms-transform: translate($top,$left);
+  -o-transform: translate($top,$left);
+  transform: translate($top,$left);
+}
+
+@mixin translate2D($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+@mixin translate3D($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+  -moz-transform: translate3d($x, $y, $z);
+  -ms-transform: translate3d($x, $y, $z);
+  -o-transform: translate3d($x, $y, $z);
+  transform: translate3d($x, $y, $z);
+}
+
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+@mixin transformYRotate($top,$rotate) {
+  -webkit-transform: translateY($top) rotate($rotate);
+  -moz-transform: translateY($top) rotate($rotate);
+  -ms-transform: translateY($top) rotate($rotate);
+  transform: translateY($top) rotate($rotate);
+}
+
+@mixin transition($time) {
+  -webkit-transition: all $time ease-out;
+  -moz-transition: all $time ease-out;
+  -o-transition: all $time ease-out;
+  transition: all $time ease-out;
+}
+
+@mixin transitionAttr($attr, $time) {
+  -webkit-transition: $attr $time ease-out;
+  -moz-transition: $attr $time ease-out;
+  -o-transition: $attr $time ease-out;
+  transition: $attr $time ease-out;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border-radius-top($radius) {
+  -webkit-border-top-left-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  -moz-border-radius-topright: $radius;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+}
+
+@mixin border-radius-bottom($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-bottomright: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin spin {
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@mixin slideInLeft {
+  -webkit-animation: slideInLeft;
+  animation: slideInLeft;
+}
+
+@mixin blur {
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+  opacity: 0.95;
+}
+
+@mixin opacity($op) {
+  opacity: $op;
+  filter: alpha(opacity=$op);
+}
+
+@mixin transition($time) {
+  -webkit-transition: all $time ease;
+  transition: all $time ease;
+}
+
+@mixin flex() {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+// Placeholder text
+@mixin placeholder($color: $input-color-placeholder,$opacity:1) {
+  // Firefox
+  &::-moz-placeholder {
+    color: $color;
+    opacity: $opacity // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  &:-ms-input-placeholder { color: $color;opacity: $opacity } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: $color;opacity: $opacity } // Safari and Chrome
+}
+
+
+@mixin  min-576 {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin  min-768 {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin  min-1600 {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
+@mixin  min-1200 {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin  min-1024 {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin range-768-1024 {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin range-768-1199 {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+
+@mixin range-768-991 {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin range-993-1024 {
+  @media (min-width: 992px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin max-992 {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+@mixin max-767 {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin max-480 {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}

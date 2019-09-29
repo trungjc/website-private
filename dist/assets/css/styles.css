@@ -1,0 +1,311 @@
+/** 
+ *------------------------------------------------------------------------------
+ * $package       html-building
+ *------------------------------------------------------------------------------
+ * $authors       trungnguyenthanh70@gmail.com
+ * $date          09/2019
+ *------------------------------------------------------------------------------
+ */
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url("../fonts/GothamRounded-Medium.eot");
+  src: local("Gotham Rounded Medium"), local("GothamRounded-Medium"), url("../fonts/GothamRounded-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamRounded-Medium.woff2") format("woff2"), url("../fonts/GothamRounded-Medium.woff") format("woff"), url("../fonts/GothamRounded-Medium.ttf") format("truetype"), url("../fonts/GothamRounded-Medium.svg#GothamRounded-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url("../fonts/GothamRounded-Light.eot");
+  src: local("Gotham Rounded Light"), local("GothamRounded-Light"), url("../fonts/GothamRounded-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamRounded-Light.woff2") format("woff2"), url("../fonts/GothamRounded-Light.woff") format("woff"), url("../fonts/GothamRounded-Light.ttf") format("truetype"), url("../fonts/GothamRounded-Light.svg#GothamRounded-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url("../fonts/GothamRounded-Book.eot");
+  src: local("Gotham Rounded Book"), local("GothamRounded-Book"), url("../fonts/GothamRounded-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamRounded-Book.woff2") format("woff2"), url("../fonts/GothamRounded-Book.woff") format("woff"), url("../fonts/GothamRounded-Book.ttf") format("truetype"), url("../fonts/GothamRounded-Book.svg#GothamRounded-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham Rounded';
+  src: url("../fonts/GothamRounded-Bold.eot");
+  src: local("Gotham Rounded Bold"), local("GothamRounded-Bold"), url("../fonts/GothamRounded-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamRounded-Bold.woff2") format("woff2"), url("../fonts/GothamRounded-Bold.woff") format("woff"), url("../fonts/GothamRounded-Bold.ttf") format("truetype"), url("../fonts/GothamRounded-Bold.svg#GothamRounded-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #484848;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: -0.02px;
+  line-height: 1.4; }
+
+img {
+  max-width: 100%; }
+
+h1 {
+  font-size: 4rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2rem; }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.5rem;
+  font-weight: 600; }
+
+p, ul {
+  margin: 0 0 3rem; }
+
+.d-xs-visible {
+  display: none !important; }
+
+a {
+  color: #036; }
+  a:hover {
+    color: #036; }
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 58.5555%; }
+  h2 {
+    font-size: 3.5rem; } }
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 55.5555%; }
+  .d-xs-block {
+    display: block !important; }
+  .d-xs-visible {
+    display: block !important; }
+  .d-xs-hidden {
+    display: none !important; }
+  .row > div + div {
+    margin-top: 3.5rem; } }
+
+.btn {
+  padding: 1.2rem 2.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.6rem; }
+  .btn.btn-xs {
+    padding: 0.5rem 2rem; }
+  .btn i {
+    margin-left: 10px; }
+  .btn.btn-primary {
+    background: #036;
+    border-color: #036; }
+    .btn.btn-primary:hover {
+      background: #ff4f00;
+      border-color: #ff4f00; }
+  .btn.btn-secondary {
+    background: #ff4f00;
+    border-color: #ff4f00; }
+    .btn.btn-secondary:hover {
+      background: rgba(84, 184, 71, 0.75);
+      border-color: rgba(84, 184, 71, 0.75); }
+
+.hero {
+  background-image: url(https://pangara.com/wp-content/themes/pangara-v2/img/home-hero-v2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+  text-align: center;
+  color: white;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.tpl-block {
+  padding: 10rem 0; }
+  .tpl-block .heading-section {
+    text-align: center; }
+  .tpl-block.tpl-user-block .card {
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 100px;
+    min-height: 354px; }
+    .tpl-block.tpl-user-block .card .skill {
+      min-height: 102px; }
+    .tpl-block.tpl-user-block .card .card-body {
+      padding: 30px; }
+    .tpl-block.tpl-user-block .card .avatar {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 128px;
+      height: 128px;
+      margin: -60px auto 0; }
+    .tpl-block.tpl-user-block .card .name {
+      margin: 0 0 0.5rem;
+      color: #036; }
+    .tpl-block.tpl-user-block .card .btn {
+      margin-top: 2rem; }
+    .tpl-block.tpl-user-block .card .position {
+      margin-bottom: 2rem; }
+    .tpl-block.tpl-user-block .card .badge {
+      font-size: 14px;
+      padding: 5px 12px;
+      border-radius: 6px;
+      border: 1px solid #bababa;
+      background: none;
+      font-weight: 600;
+      color: #036;
+      display: inline-block;
+      margin: 0 5px 8px 0;
+      position: relative; }
+  .tpl-block.tpl-block-grey {
+    background: #F3F6FC; }
+    .tpl-block.tpl-block-grey h3 {
+      color: #036; }
+  .tpl-block.customers-review {
+    background: #133365; }
+    .tpl-block.customers-review .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .tpl-block.customers-review .card {
+      border-radius: 8px;
+      border-color: white;
+      font-size: 1.6rem;
+      height: 100%; }
+      .tpl-block.customers-review .card p {
+        line-height: 1.6; }
+      .tpl-block.customers-review .card .card-body {
+        padding: 30px; }
+      .tpl-block.customers-review .card .profile-top {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 1.5rem; }
+        .tpl-block.customers-review .card .profile-top p {
+          margin: 0; }
+      .tpl-block.customers-review .card .text {
+        padding-left: 20px; }
+        .tpl-block.customers-review .card .text h5 {
+          font-size: 1.6rem;
+          margin-bottom: 0.5rem; }
+        .tpl-block.customers-review .card .text p {
+          font-size: 80%; }
+    .tpl-block.customers-review .heading-section {
+      color: white; }
+  .tpl-block .rate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .tpl-block .rate a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 25px;
+      height: 25px;
+      background: #036;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .tpl-block .rate a + a {
+        margin-left: 5px; }
+
+.tpl-block-dark {
+  text-align: center;
+  background: #1A1A23;
+  color: white; }
+  .tpl-block-dark p + .btn {
+    margin-top: 2rem; }
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 25px 35px;
+  top: 0;
+  z-index: 999; }
+  .header ul {
+    list-style: none;
+    padding: 0; }
+
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
+.navbar-nav-scroll {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.navbar {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .navbar ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+
+.footer {
+  padding: 3rem 0 1rem;
+  background: #0f1522;
+  color: #fff;
+  font-size: 1.4rem; }
+  .footer h3 {
+    text-transform: uppercase;
+    color: #979797;
+    margin: 0 0 1rem; }
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .footer ul li a {
+      margin-left: 5px;
+      border: 1px solid #979797;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 36px;
+      cursor: pointer;
+      height: 36px;
+      text-align: center;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+      .footer ul li a:hover {
+        border: 1px solid #fff;
+        color: white; }
+  .footer a {
+    color: inherit; }

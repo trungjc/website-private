@@ -1,0 +1,140 @@
+﻿.hero {
+  background-image: url(https://pangara.com/wp-content/themes/pangara-v2/img/home-hero-v2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+  text-align: center;
+  color: white;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+
+.tpl-block {
+  padding: 10rem 0;
+  .heading-section {
+    text-align: center;
+  }
+  &.tpl-user-block {
+    .card {
+      text-align: center;
+      border-radius: 8px;
+      margin-top: 100px;
+      min-height: 354px;
+      .skill {
+        min-height: 102px;
+      }
+      .card-body {
+        padding: 30px;
+      }
+      .avatar{
+        border-radius: 50%;
+        overflow: hidden;
+        width: 128px;
+        height: 128px;
+        margin: -60px auto 0;
+
+      }
+      .name {
+        margin: 0 0 0.5rem;
+        color: $link-color;
+      }
+      .btn {
+        margin-top: 2rem;
+      }
+      .position {
+        margin-bottom: 2rem;
+      }
+      .badge {
+        font-size: 14px;
+        padding: 5px 12px;
+        border-radius: 6px;
+        border: 1px solid #bababa;
+        background: none;
+        font-weight: 600;
+        color: $link-color;
+        display: inline-block;
+        margin: 0 5px 8px 0;
+        position: relative;
+      }
+    }
+  }
+  &.tpl-block-grey {
+    background: #F3F6FC;
+    h3 {
+      color: $link-color
+    }
+  }
+  &.customers-review {
+
+    background: $blue;
+    .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .card {
+      border-radius: 8px;
+      border-color: white;
+      font-size: $font-size-base;
+      height: 100%;
+      p {
+        line-height: 1.6;
+      }
+     .card-body {
+       padding: 30px;
+     }
+      .profile-top {
+        align-items: center;
+        margin-bottom: 1.5rem;
+        p {
+          margin: 0;
+        }
+      }
+
+      .text {
+        padding-left: 20px;
+        h5 {
+          font-size: $font-size-base;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          font-size: 80%;
+        }
+      }
+    }
+    .heading-section {
+      color: white;
+    }
+  }
+  .rate {
+    display: flex;
+    justify-content: center;
+    a {
+      display: flex;
+      width: 25px;
+      height: 25px;
+      background: $brand-primary;
+      justify-content: center;
+      align-items: center;
+      & + a {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.tpl-block-dark {
+  text-align: center;
+  background: #1A1A23;
+  color: white;
+  p + .btn {
+    margin-top: 2rem;
+  }
+}

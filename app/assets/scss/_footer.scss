@@ -1,0 +1,37 @@
+.footer {
+  padding: 3rem 0 1rem;
+  background: #0f1522;
+  color: #fff;
+  font-size: 1.4rem;
+  h3 {
+    text-transform: uppercase;
+    color:#979797;
+    margin: 0 0 1rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    li {
+      a {
+        margin-left: 5px;
+        border:1px solid #979797;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        cursor: pointer;
+        height: 36px;
+        text-align: center;
+        transition: all 0.3s linear;
+        &:hover {
+          border:1px solid #fff;
+          color: white;
+        }
+      }
+    }
+  }
+  a {
+    color: inherit
+  }
+}

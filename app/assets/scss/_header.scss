@@ -1,0 +1,25 @@
+.header {
+  position: absolute;
+  width: 100%;
+  left:0;
+  padding: 25px 35px;
+  top:0;
+  z-index: 999;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.navbar-nav-scroll {
+  flex: 1;
+}
+.navbar {
+  justify-content: flex-end;
+  ul {
+    justify-content: flex-end;
+  }
+}

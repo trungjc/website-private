@@ -1,0 +1,107 @@
+﻿// ------------------------------------------------------
+// Reset
+// ------------------------------------------------------
+
+// Common
+// ---------------------------
+html {
+  font-size:62.5%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $color-base;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: 400;
+  letter-spacing: -0.02px;
+  line-height: 1.4;
+}
+img {
+  max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+  //font-weight: 500;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.5rem;
+  font-weight:600;
+}
+p,ul {
+  margin: 0 0 3rem;
+}
+.d-xs-visible {
+  display: none!important;
+}
+a {
+  color:$link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+@include max-992 {
+  html {
+    font-size:58.5555%;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+@include max-767 {
+  html {
+    font-size:55.5555%;
+  }
+  .d-xs-block {
+    display: block!important;
+  }
+  .d-xs-visible {
+    display: block!important;
+  }
+  .d-xs-hidden {
+    display: none!important;
+  }
+
+  .row {
+    > div + div {
+      margin-top: 3.5rem;
+    }
+  }
+}
+
+.btn {
+  padding: 1.2rem 2.5rem;
+  &.btn-xs {
+    padding: 0.5rem 2rem;
+  }
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: $font-size-base;
+  i {
+    margin-left: 10px;
+  }
+  &.btn-primary {
+    background: $brand-primary;
+    border-color: $brand-primary;
+    &:hover {
+      background: $orange;
+      border-color: $orange;
+    }
+  }
+  &.btn-secondary {
+    background: $orange;
+    border-color: $orange;
+    &:hover {
+      background: $rgba-bran;
+      border-color: $rgba-bran;
+    }
+  }
+}
