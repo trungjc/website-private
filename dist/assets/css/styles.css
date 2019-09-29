@@ -225,7 +225,7 @@ a {
       display: flex;
       width: 25px;
       height: 25px;
-      background: #036;
+      background: rgba(84, 184, 71, 0.75);
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -271,6 +271,10 @@ a {
         -ms-flex-pack: end;
             justify-content: flex-end; }
 
+.navbar-brand {
+  font-weight: 700;
+  font-size: 30px; }
+
 .footer {
   padding: 3rem 0 1rem;
   background: #0f1522;
@@ -303,7 +307,8 @@ a {
       height: 36px;
       text-align: center;
       -webkit-transition: all 0.3s linear;
-      transition: all 0.3s linear; }
+      transition: all 0.3s linear;
+      color: #979797; }
       .footer ul li a:hover {
         border: 1px solid #fff;
         color: white; }
